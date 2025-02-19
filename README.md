@@ -1,0 +1,3 @@
+# Unnecessary Re-renders in React useEffect Hook
+
+This repository demonstrates a common React issue where the `useEffect` hook causes unnecessary re-renders and console spam.  The `bug.js` file shows the problematic code, while `bugSolution.js` provides the corrected version.  The issue stems from the `useEffect` hook running after every render instead of only when the count changes.  The solution uses the optional dependency array to control when the effect runs.
